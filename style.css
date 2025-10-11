@@ -43,6 +43,11 @@
     margin-bottom: 25px;
 
 }
+.row ::placeholder{
+    font-weight: bold;
+    font-size: 18px;
+    
+}
 input {
     flex: 1;
     border: none;
@@ -51,7 +56,9 @@ input {
     padding: 10px;
     font-weight: 14px;
 
+
 }
+
 button{
     border: none;
     outline: none;
@@ -64,6 +71,10 @@ button{
 
 
 }
+button:hover{
+    background-color: green;
+    color: white;
+}
 
 ul li{
     list-style: none;
@@ -72,6 +83,11 @@ ul li{
     user-select: none;
     cursor: pointer;
     position: relative;
+}
+ul li:hover{
+    color:green;
+    font-weight: bold;
+
 }
 ul li::before{
     content: '';
@@ -85,16 +101,20 @@ ul li::before{
      top: 12px;
      left: 8px;
 
+}
 
-}ul li.checked{
-    color:#555;
+ul li.checked{
+    color:red;
     text-decoration: line-through;
 
 }
+
+
 ul li.checked::before{
-    background-image: url(#);
+    background-image: url(#); 
 
 }
+
 ul li span{
     position: absolute;
     right: 0;
@@ -107,7 +127,9 @@ ul li span{
     text-align: center;
     border-radius: 50%;
 }
+
+
 ul li span:hover{
-    background: #edeef0;
+    background: red;
 
 }
